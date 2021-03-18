@@ -1,6 +1,7 @@
 {
 	"name": "vscode-todo-list",
 	"displayName": " VSCode-TODO-List",
+	"publisher": "BibaswanBhawal",
 	"description": "A List to keep track of all TODOs in a file.",
 	"version": "0.0.1",
 	"engines": {

@@ -1,14 +1,16 @@
-<script>
-    import listItem from './list_item.svelte'
-</script>
+<style>
+    #todo-list {
+        list-style-type: square;
+    }
+</style>
 
 <ul id="todo-list"></ul>
 
-<style>
-</style>
-
 <script>
+    import listItem from './list_item.svelte'
+
     let vscode;
+
     (function() {
             vscode = acquireVsCodeApi(); 
         }())
