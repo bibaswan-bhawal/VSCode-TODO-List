@@ -17,31 +17,30 @@
 	"contributes": {
 		"viewsContainers": {
 			"activitybar": [
-			  {
-				"id": "todo-list-sidebar-view",
-				"title": "TODO List",
-				"icon": "media/checklist.svg"
-			  }
-			]
-		  },
-		  "views": {
-			"todo-list-sidebar-view": [
-			  {
-				"type": "webview",
-				"id": "todo-list-sidebar",
-				"icon": "media/checklist.svg",
-				"name": "TODO List",
-				"contextualTitle": "TODO List"
-			  }
+				{
+					"id": "todo-list-sidebar-view",
+					"title": "TODO List",
+					"icon": "media/checklist.svg"
+				}
 			]
 		},
-		"commands": [
-		]
+		"views": {
+			"todo-list-sidebar-view": [
+				{
+					"type": "webview",
+					"id": "todo-list-sidebar",
+					"icon": "media/checklist.svg",
+					"name": "TODO List",
+					"contextualTitle": "TODO List"
+				}
+			]
+		},
+		"commands": []
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
-		"compile": "rollup -c && webpack --mode production",
-		"package": "webpack --mode production --devtool hidden-source-map",
+		"compile": "vsce ",
+		"package": "rollup -c && webpack --mode production",
 		"test-compile": "tsc -p ./",
 		"watch": "concurrently \"rollup -c -w\" \"webpack --mode development --watch\"",
 		"test-watch": "tsc -watch -p ./",

@@ -1,9 +1,3 @@
-<style>
-    #todo-list {
-        list-style-type: square;
-    }
-</style>
-
 <ul id="todo-list"></ul>
 
 <script>
